@@ -1,6 +1,10 @@
 <template>
   <el-container class="layout-container">
     <el-aside width="200px">
+      <div class="logo-container">
+        <img src="https://api.dicebear.com/7.x/bottts-neutral/svg?seed=care&backgroundColor=409EFF&radius=50&scale=90&translateY=5" alt="logo" class="logo" style="background: white; border-radius: 50%; padding: 2px;" />
+        <h1 class="platform-title">智慧养老服务平台</h1>
+      </div>
       <el-menu
         :default-active="route.path"
         class="el-menu-vertical"
@@ -22,13 +26,21 @@
           <el-icon><FirstAidKit /></el-icon>
           <span>照护管理</span>
         </el-menu-item>
+        <el-menu-item index="/health-record">
+          <el-icon><Document /></el-icon>
+          <span>健康档案</span>
+        </el-menu-item>
         <el-menu-item index="/finance">
           <el-icon><Money /></el-icon>
           <span>财务结算</span>
         </el-menu-item>
         <el-menu-item index="/devices">
-          <el-icon><Connection /></el-icon>
+          <el-icon><Monitor /></el-icon>
           <span>智能设备</span>
+        </el-menu-item>
+        <el-menu-item index="/interaction">
+          <el-icon><ChatDotRound /></el-icon>
+          <span>智能交互</span>
         </el-menu-item>
         <el-menu-item index="/data">
           <el-icon><DataLine /></el-icon>
@@ -75,11 +87,13 @@ import {
   User,
   Files,
   FirstAidKit,
+  Document,
   Money,
   Connection,
   DataLine,
   Setting,
-  ArrowDown
+  ArrowDown,
+  ChatDotRound
 } from '@element-plus/icons-vue'
 
 const route = useRoute()
@@ -146,5 +160,29 @@ const route = useRoute()
   display: flex;
   align-items: center;
   color: #606266;
+}
+
+.logo-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #304156;
+  color: #E6E6E6;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.platform-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style> 

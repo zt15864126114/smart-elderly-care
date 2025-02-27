@@ -1,29 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Dashboard from '../views/Dashboard.vue'
+import Registration from '../views/Registration.vue'
+import Assessment from '../views/Assessment.vue'
+import Care from '../views/Care.vue'
+import Layout from '../views/Layout.vue'
 
 const routes = [
   {
     path: '/',
-    component: () => import('../views/Layout.vue'),
+    name: 'Welcome',
+    component: () => import('../views/Welcome.vue')
+  },
+  {
+    path: '/main',
+    component: Layout,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         name: 'Dashboard',
-        component: () => import('../views/Dashboard.vue')
+        component: Dashboard
       },
       {
         path: 'registration',
         name: 'Registration',
-        component: () => import('../views/Registration.vue')
+        component: Registration
       },
       {
         path: 'assessment',
         name: 'Assessment',
-        component: () => import('../views/Assessment.vue')
+        component: Assessment
       },
       {
         path: 'care',
         name: 'Care',
-        component: () => import('../views/Care.vue')
+        component: Care
       },
       {
         path: 'finance',
@@ -44,13 +54,27 @@ const routes = [
         path: 'settings',
         name: 'Settings',
         component: () => import('../views/Settings.vue')
+      },
+      {
+        path: 'health-record',
+        name: 'HealthRecord',
+        component: () => import('../views/HealthRecord.vue')
+      },
+      {
+        path: 'interaction',
+        name: 'interaction',
+        component: () => import('../views/Interaction.vue'),
+        meta: {
+          title: '智能交互',
+          icon: 'ChatDotRound'
+        }
       }
     ]
   }
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 })
 

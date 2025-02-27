@@ -151,19 +151,19 @@ const alerts = [
     time: formatDate(new Date(now - 1000 * 60 * 30)), // 30分钟前
     type: '跌倒告警',
     tagType: 'danger',
-    content: '3号房张三发生跌倒'
+    content: '3号房张建国发生跌倒'
   },
   {
     time: formatDate(new Date(now - 1000 * 60 * 90)), // 90分钟前
     type: '心率异常',
     tagType: 'warning',
-    content: '5号房李四心率异常'
+    content: '5号房王淑芬心率异常'
   },
   {
     time: formatDate(new Date(now - 1000 * 60 * 120)), // 120分钟前
     type: 'SOS求助',
     tagType: 'danger',
-    content: '2号房王五按下求助按钮'
+    content: '2号房刘建德按下求助按钮'
   }
 ]
 
@@ -171,25 +171,25 @@ const alerts = [
 const tasks = ref([
   {
     id: 1,
-    content: '晨检体温记录',
+    content: '张建国晨检体温记录',
     time: '09:00',
     done: true
   },
   {
     id: 2,
-    content: '用药提醒',
+    content: '王淑芬用药提醒',
     time: '10:00',
     done: false
   },
   {
     id: 3,
-    content: '康复训练',
+    content: '刘建德康复训练',
     time: '14:00',
     done: false
   },
   {
     id: 4,
-    content: '下午茶',
+    content: '集体下午茶活动',
     time: '15:30',
     done: false
   }
