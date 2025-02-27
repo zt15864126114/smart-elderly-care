@@ -10,43 +10,43 @@
         class="el-menu-vertical"
         router
       >
-        <el-menu-item index="/">
+        <el-menu-item index="/main/dashboard">
           <el-icon><Monitor /></el-icon>
           <span>首页概览</span>
         </el-menu-item>
-        <el-menu-item index="/registration">
+        <el-menu-item index="/main/registration">
           <el-icon><User /></el-icon>
           <span>登记管理</span>
         </el-menu-item>
-        <el-menu-item index="/assessment">
+        <el-menu-item index="/main/assessment">
           <el-icon><Files /></el-icon>
           <span>评估管理</span>
         </el-menu-item>
-        <el-menu-item index="/care">
+        <el-menu-item index="/main/care">
           <el-icon><FirstAidKit /></el-icon>
           <span>照护管理</span>
         </el-menu-item>
-        <el-menu-item index="/health-record">
+        <el-menu-item index="/main/health-record">
           <el-icon><Document /></el-icon>
           <span>健康档案</span>
         </el-menu-item>
-        <el-menu-item index="/finance">
+        <el-menu-item index="/main/finance">
           <el-icon><Money /></el-icon>
           <span>财务结算</span>
         </el-menu-item>
-        <el-menu-item index="/devices">
+        <el-menu-item index="/main/devices">
           <el-icon><Monitor /></el-icon>
           <span>智能设备</span>
         </el-menu-item>
-        <el-menu-item index="/interaction">
+        <el-menu-item index="/main/interaction">
           <el-icon><ChatDotRound /></el-icon>
           <span>智能交互</span>
         </el-menu-item>
-        <el-menu-item index="/data">
+        <el-menu-item index="/main/data">
           <el-icon><DataLine /></el-icon>
           <span>数据中心</span>
         </el-menu-item>
-        <el-menu-item index="/settings">
+        <el-menu-item index="/main/settings">
           <el-icon><Setting /></el-icon>
           <span>系统设置</span>
         </el-menu-item>
