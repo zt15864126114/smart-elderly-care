@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <el-menu
     :default-active="route.path"
     class="side-menu"
@@ -86,4 +86,4 @@ const route = useRoute()
 .side-menu :deep(.el-menu-item:hover) {
   background-color: var(--el-menu-hover-bg-color);
 }
-</style>  -->
+</style> 

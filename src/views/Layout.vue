@@ -56,7 +56,7 @@
     <el-container>
       <el-header>
         <div class="header-left">
-          <h2>智慧养老服务平台</h2>
+          <h2>汶上县养老院智慧养老服务平台</h2>
         </div>
         <div class="header-right">
           <el-dropdown>
